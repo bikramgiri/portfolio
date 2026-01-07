@@ -3,6 +3,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import ScrollToExplore from "../../components/ScrollToExplore";
 import { FaGoogleScholar } from "react-icons/fa6";
+import profileImage from '../../assets/image.png';
 
 const Hero = () => {
     const handleSmoothScroll = (e, id) => {
@@ -131,7 +132,7 @@ const Hero = () => {
                             border-2 md:border-8 border-blue-400"
               >
                 <img
-                  src="/image.png"
+                  src={profileImage}
                   alt="Sushil Sharma"
                   className="w-full h-full object-cover object-top 
                            grayscale-[20%] 

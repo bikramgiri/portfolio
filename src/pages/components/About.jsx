@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 // import { Link } from "react-router-dom";
 import { Tweet } from "react-tweet";
 import XTimeline from "../../components/XTimeline";
+import profileImage from '../../assets/image.png';
 
 const About = () => {
   return (
@@ -34,7 +35,7 @@ const About = () => {
               {/* Image Container */}
               <div className="rounded-2xl overflow-hidden border-4 md:border-8 border-blue-400 shadow-xl flex items-center justify-center">
                 <img
-                  src="/image.png"
+                  src={profileImage}
                   alt="Sushil Sharma"
                   className="w-full h-auto object-cover aspect-square sm:aspect-[4/5] lg:aspect-auto max-w-full max-h-full"
                 />

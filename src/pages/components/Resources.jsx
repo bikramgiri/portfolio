@@ -11,6 +11,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 // import { Link } from "react-router-dom";
+import resourceImage from '../../assets/resource.png';
 
 const Resources = () => {
   const [filter, setFilter] = useState("all");
@@ -24,7 +25,7 @@ const Resources = () => {
       date: "May 10, 2024",
       category: "AI",
       featured: true,
-      image: "/resource.png",
+      image: resourceImage,
       url: "https://www.example.com/certificate/mern-stack",
       description:
         "Completed an introductory course on Artificial Intelligence using Python programming.",
@@ -34,7 +35,7 @@ const Resources = () => {
       date: "June 29, 2025",
       category: "UI/UX Design",
       featured: false,
-      image: "/resource.png",
+      image: resourceImage,
       url: "#",
       description:
         "Gained foundational knowledge in design principles and user experience concepts.",
@@ -44,7 +45,7 @@ const Resources = () => {
       date: "October 3, 2025",
       category: "Web Development",
       featured: false,
-      image: "/resource.png",
+      image: resourceImage,
       url: "#",
       description:
         "Completed basic training in web development focusing on HTML and CSS technologies.",
@@ -54,7 +55,7 @@ const Resources = () => {
       date: "September 1, 2024",
       category: "Research",
       featured: true,
-      image: "/resource.png",
+      image: resourceImage,
       url: "#",
       description:
         "Learned how to effectively search and utilize articles in Google Scholar for academic research.",
@@ -64,7 +65,7 @@ const Resources = () => {
       date: "April 24, 2025",
       category: "Programming",
       featured: true,
-      image: "/resource.png",
+      image: resourceImage,
       url: "#",
       description:
         "Completed foundational courses in C programming language covering syntax and basic programming concepts.",
@@ -74,7 +75,7 @@ const Resources = () => {
       date: "June 21, 2025",
       category: "Programming",
       featured: false,
-      image: "/resource.png",
+      image: resourceImage,
       url: "#",
       description:
         "Completed introductory courses in C# programming language and .NET framework basics.",
@@ -84,7 +85,7 @@ const Resources = () => {
       date: "November 5, 2025",
       category: "Programming",
       featured: false,
-      image: "/resource.png",
+      image: resourceImage,
       url: "#",
       description:
         "Learned the fundamentals of C++ programming including syntax, data types, and control structures.",
@@ -94,7 +95,7 @@ const Resources = () => {
       date: "March 13, 2025",
       category: "Programming",
       featured: false,
-      image: "/resource.png",
+      image: resourceImage,
       url: "#",
       description:
         "Introduction to the fundamental concepts of computer science including algorithms, data structures, and problem-solving techniques.",

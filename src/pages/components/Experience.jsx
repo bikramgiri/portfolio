@@ -1,5 +1,6 @@
 import React from "react";
 import { Briefcase, Calendar, MapPin, WorkflowIcon } from "lucide-react";
+import icon from '../../assets/logo.png';
 
 const Experience = () => {
   const experienceList = [
@@ -75,7 +76,7 @@ const Experience = () => {
                     <div className="flex flex-col sm:flex-row sm:items-start gap-4 md:gap-4 mb-2 md:mb-2">
                       <div className="flex-shrink-0">
                         <img
-                          src="/logo.png"
+                          src={icon}
                           alt="datacamp"
                           className="w-12 h-12 md:w-18 md:h-18 rounded-xl text-blue-600"
                         />
