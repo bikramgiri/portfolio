@@ -1,6 +1,6 @@
 import { ArrowRight, Facebook, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import ScrollToExplore from "../../components/ScrollToExplore";
 import { FaGoogleScholar } from "react-icons/fa6";
 
@@ -47,8 +47,8 @@ const Hero = () => {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link
-                to="#contact"
+              <a
+                href="#contact"
                 onClick={(e) => handleSmoothScroll(e, "contact")}
                 className="group relative inline-flex items-center justify-center px-7 py-3.5 
                          bg-gradient-to-r from-blue-600 to-blue-500 
@@ -59,10 +59,10 @@ const Hero = () => {
               >
                 Get In Touch
                 <Mail className="w-5 h-5 ml-2" />
-              </Link>
+              </a>
 
-              <Link
-                to="#about"
+              <a
+                href="#about"
                 onClick={(e) => handleSmoothScroll(e, "about")}
                 className="inline-flex items-center justify-center px-7 py-3.5 
                          border-2 border-blue-600 text-blue-600 font-semibold rounded-full 
@@ -71,7 +71,7 @@ const Hero = () => {
               >
                 Know More
                 <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
+              </a>
             </div>
 
             {/* Connect with me */}
@@ -82,9 +82,9 @@ const Hero = () => {
 
               <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-2">
                 {[
-                  { icon: Linkedin, label: "LinkedIn", to: "#" },
-                  { icon: Github, label: "GitHub", to: "#" },
-                  { icon: FaGoogleScholar, label: "Google Scholar", to: "#" },
+                  { icon: Linkedin, label: "LinkedIn", href: "#" },
+                  { icon: Github, label: "GitHub", href: "#" },
+                  { icon: FaGoogleScholar, label: "Google Scholar", href: "#" },
                   {
                     icon: Mail,
                     label: "Email",
@@ -92,9 +92,9 @@ const Hero = () => {
                   },
                   { icon: Twitter, label: "Twitter", href: "tel:98XXXXXXXX" },
                 ].map((social, index) => (
-                  <Link
+                  <a
                     key={index}
-                    to={social.href}
+                    href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group relative p-3 sm:p-3.5 
@@ -113,7 +113,7 @@ const Hero = () => {
                       className="w-6 h-6 sm:w-7 sm:h-7"
                       strokeWidth={2.1}
                     />
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>

@@ -7,10 +7,10 @@ import {
   ChevronLeft,
   ChevronRight,
   X,
-  ExternalLinkIcon,
+  ExternalLink,
   ArrowRight,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Resources = () => {
   const [filter, setFilter] = useState("all");
@@ -229,15 +229,15 @@ const Resources = () => {
 
                 {/* Buttons */}
                 <div className="pt-2 border-t border-blue-800/40">
-                  <Link
-                    to={resource.url}
+                  <a
+                    href={resource.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 px-2 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-xl shadow-lg hover:from-blue-700 hover:to-blue-800 hover:shadow-xl hover:scale-105 transition-all duration-300"
                   >
                     Read More
                     <ArrowRight className="w-5 h-5" />
-                  </Link>
+                  </a>
                 </div>
                 </div>
               </div>
@@ -388,15 +388,15 @@ const Resources = () => {
                   </div>
                 </div>
 
-                    <Link
-                      to={selectedResource.url}
+                    <a
+                      href={selectedResource.url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1 flex items-center justify-center gap-2 py-4 md:py-5 px-6 border border-blue-700 bg-gradient-to-r from-blue-500 to-blue-600 dark:text-white font-bold text-base sm:text-lg md:text-xl rounded-xl shadow-md hover:shadow-blue-500/50 hover:scale-102 transition-all duration-300"
                     >
-                      <ExternalLinkIcon className="w-6 h-6 sm:w-6 sm:h-6 md:w-6 md:h-6 flex-shrink-0" />
+                      <ExternalLink className="w-6 h-6 sm:w-6 sm:h-6 md:w-6 md:h-6 flex-shrink-0" />
                       View & Verify Credential
-                    </Link>
+                    </a>
               </div>
             </div>
           </div>

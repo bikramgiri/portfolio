@@ -1,6 +1,6 @@
 import React from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Tweet } from "react-tweet";
 import XTimeline from "../../components/XTimeline";
 
@@ -99,12 +99,7 @@ const About = () => {
         <XTimeline />
       </div> */}
 
-
-                
-
             </div>
-
-            {/* View more link */}
             <p className="mt-6 text-sm text-gray-500 text-center lg:text-left">
               Want to see more?{" "}
               <a

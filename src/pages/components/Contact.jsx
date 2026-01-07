@@ -8,7 +8,7 @@ import {
   Twitter,
   SendIcon,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { FaGoogleScholar } from "react-icons/fa6";
 // import emailjs from "@emailjs/browser";
 
@@ -91,14 +91,14 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="md:text-lg md:text-base text-gray-600">Email</p>
-                  <Link
-                    to="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=example@gmail.com"
+                  <a
+                    href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=example@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-lg sm:text-xl text-gray-700 hover:text-blue-500 transition-colors duration-300"
                   >
                     example@gmail.com
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -108,12 +108,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="md:text-lg md:text-base text-gray-600">Phone</p>
-                  <Link
-                    to="tel:98XXXXXXXX"
+                  <a
+                    href="tel:98XXXXXXXX"
                     className="text-lg sm:text-xl text-gray-700 hover:text-blue-500 transition-colors duration-300"
                   >
                     98XXXXXXXX
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -134,34 +134,34 @@ const Contact = () => {
 
             {/* Social Icons */}
             <div className="flex gap-4 md:gap-6 mt-10 md:mt-14">
-              <Link
-                to="#"
+              <a
+                href="#"
                 className="p-3 md:p-4 bg-blue-600/30 rounded-2xl hover:scale-110 transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-6 h-6 md:w-8 md:h-8 text-blue-500 hover:text-blue-700" />
-              </Link>
-              <Link
-                to="#"
+              </a>
+              <a
+                href="#"
                 className="p-3 md:p-4 bg-blue-600/30 rounded-2xl hover:scale-110 transition-all duration-300"
                 aria-label="GitHub"
               >
                 <Github className="w-6 h-6 md:w-8 md:h-8 text-blue-500 hover:text-blue-700" />
-              </Link>
-              <Link
-                to="#"
+              </a>
+              <a
+                href="#"
                 className="p-3 md:p-4 bg-blue-600/30 rounded-2xl hover:scale-110 transition-all duration-300"
                 aria-label="Google Scholar"
               >
                 <FaGoogleScholar className="w-6 h-6 md:w-8 md:h-8 text-blue-500 hover:text-blue-700" />
-              </Link>
-              <Link
-                to="#"
+              </a>
+              <a
+                href="#"
                 className="p-3 md:p-4 bg-blue-600/30 rounded-2xl hover:scale-110 transition-all duration-300"
                 aria-label="Twitter"
               >
                 <Twitter className="w-6 h-6 md:w-8 md:h-8 text-blue-500 hover:text-blue-700" />
-              </Link>
+              </a>
             </div>
           </div>
 
