@@ -8,7 +8,7 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
 
   const navLinks = [
-    { name: "Home", path: "#home", id: "home" },
+    { name: "Home", path: "/home", id: "home" },
     { name: "About", path: "#about", id: "about" },
     { name: "Experience", path: "#experience", id: "experience" },
     { name: "Education", path: "#education", id: "education" },
